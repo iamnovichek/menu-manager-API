@@ -9,6 +9,8 @@ __pycache__/
 # local
 local.py
 
+poetry.lock
+
 # Distribution / packaging
 .Python
 build/

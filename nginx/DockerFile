@@ -1,0 +1,6 @@
+FROM nginx:stable-alpine
+CMD ["nginx", "-g", "daemon off;"]
+
+COPY nginx/ca.crt /etc/nginx/ssl/ca.crt
+COPY nginx/menu-api.com.crt /etc/nginx/ssl/menu-api.com.crt
+COPY nginx/menu-api.com.key /etc/nginx/ssl/menu-api.com.key
